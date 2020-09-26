@@ -8,22 +8,30 @@
 class triangle
 {
 private:
+	int sideLength;
+	int sideLenghtTwo;
+	int sideLenghtThree;
+
+	int angle;
+	int angleTwo;
+	int angleThree;
+
 
 
 public:
-    triangle();
-    ~triangle();
+	triangle();
+	~triangle();
 
-    //Methodes 
-    int AddSides();
-    int AngleCalculator();
+	//Methods 
+	int AddSides(int value1, int value2, int value3);
+	int AngleCalculator();
 
-    //Getters 
-    bool GetPerimiter();
-    bool GetInternalAngle();
+	//Getters 
+	bool GetPerimiter();
+	bool GetInternalAngle();
 
-    //Setters
-    void SetSide(int userLength);
-    void SetAngle(int userAngle);
+	//Setters
+	void SetSide(int userLength);
+	void SetAngle(int userAngle);
 
 };
