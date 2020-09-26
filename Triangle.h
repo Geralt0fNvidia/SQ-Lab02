@@ -5,7 +5,6 @@
 #include<new>
 #include<math.h>
 
-
 class triangle
 {
 private:
@@ -15,17 +14,16 @@ public:
     triangle();
     ~triangle();
 
-    int addSides()
-    {
-        int value = 0;
-        return value;
-    }
+    //Methodes 
+    int AddSides();
+    int AngleCalculator();
 
-    int angleCalculator()
-    {
-        int value = 0;
-        return value;
-    }
+    //Getters 
+    bool GetPerimiter();
+    bool GetInternalAngle();
 
+    //Setters
+    void SetSide(int userLength);
+    void SetAngle(int userAngle);
 
 };
